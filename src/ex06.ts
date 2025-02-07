@@ -3,7 +3,11 @@
 // The callback function will perform a mathematical operation (like add, subtract) on the two numbers.
 // Call calculate with different mathematical operations.
 
-function calculate(a, b, operation) {
+function calculate(
+  a: number,
+  b: number,
+  operation: (x: number, y: number) => number
+): number {
   return operation(a, b);
 }
 
